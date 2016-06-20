@@ -1,0 +1,27 @@
+{
+  "asdasd": [
+    {
+      "url": "banners/asdasd_300x250/GC.html",
+      "companyName": "asdasd",
+      "width": "300",
+      "height": "250",
+      "extra": 0
+    }
+  ],
+  "GC": [
+    {
+      "url": "banners/GC_160x600/GC.html",
+      "companyName": "GC",
+      "width": "160",
+      "height": "600",
+      "extra": 0
+    },
+    {
+      "url": "banners/GC_300x250/GC.html",
+      "companyName": "GC",
+      "width": "300",
+      "height": "250",
+      "extra": 0
+    }
+  ]
+}
