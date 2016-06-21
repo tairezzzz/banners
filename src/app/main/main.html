@@ -1,12 +1,12 @@
 <div class="wrapper" layout-fill layout="row" layout-align="center center">
 
-  <md-content flex flex-lg="60" flex-xl="60">
+  <md-content flex flex-lg="70" flex-xl="70">
 
     <header layout="column" layout-padding layout-align="center center">
       <div class="md-display-4">Banners</div>
     </header>
 
-    <div class="content" layout="row" layout-xs="column" layout-padding layout-margin>
+    <form class="content" layout="row" layout-xs="column" layout-padding layout-margin>
 
       <aside flex>
         <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="true" md-disable-backdrop md-whiteframe="4">
@@ -26,6 +26,7 @@
             </li>
           </ul>
         </md-sidenav>
+        <div style="margin-top:20px" ng-show="main.showForm"><md-button ng-click="main.show()">Add banner</md-button></div>
       </aside>
 
       <md-content flex>
@@ -37,26 +38,32 @@
             </md-card-header-text>
           </md-card-header>
           <iframe src="{{main.banner.url}}" width="{{main.banner.width}}" height="{{main.banner.height}}"></iframe>
-          <!--<md-whiteframe class="md-whiteframe-5dp" layout layout-align="center center" flex>
-          </md-whiteframe>-->
         </md-card>
+        <div class="add-form" ng-show="main.showForm">
+          {{main.msg}}
+          <div class="md-headline">{{main.message}}</div>
+          <form class="form" name="bannerForm">
+            <md-input-container class="md-block">
+              <label>Company title</label>
+              <input ng-model="newBanner.companyName">
+            </md-input-container>
+            <md-input-container>
+              <label>Width</label>
+              <input ng-model="newBanner.width">
+            </md-input-container>
+            <md-input-container>
+              <label>Height</label>
+              <input ng-model="newBanner.height">
+            </md-input-container>
+            <div>
+              <md-button class="md-raised md-primary" ng-click="main.addBnr(newBanner)">Add</md-button>
+            </div>
+          </form>
+        </div>
       </md-content>
 
     </div>
 
-    <!--<div class="techs" layout-align="center">.url, item.width, item.height
-                  {{item.url}} {{item.width}}
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
-        </div>
-      </md-card>
-    </div>-->
   </md-content>
 
 </div>
