@@ -1,0 +1,19 @@
+.wrapper{
+    width:660px;
+    height:440px;
+    backgrpund:url(banner.jpg);
+}
+
+.content{
+    width:340px;
+    padding:144px 0 0 290px;
+    color:#fff;
+}
+
+textarea{
+    width: 92%;
+    height: 118px;
+    margin: 0 auto 0.25em;
+    padding: 0.5em;
+    font-size: 21px;
+}
