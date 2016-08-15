@@ -8,15 +8,15 @@ export class MainController {
 
   onInit(){
     this.banners = this.bannersService.banners;
-    this.message = this.bannersService.message;
+    /*this.message = this.bannersService.message;
     //this.banners = this.bannersService.getBanners();
     this.banner = {};
     this.showBan = false;
     this.showForm = false;
-    this.bn = {};
+    this.bn = {};*/
   }
 
-  showBanner(banner){
+  /*showBanner(banner){
     this.banner=banner;
     this.showBan = true;
     this.showForm = false;
@@ -31,5 +31,5 @@ export class MainController {
     banner.url = 'banners/' + banner.companyName + '_' + banner.width + 'x' + banner.height + '/GC.html';
     //this.bn = banner;
     this.bannersService.addBanner(banner);
-  }
+  }*/
 }

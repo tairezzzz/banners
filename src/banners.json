@@ -23,5 +23,14 @@
       "height": "250",
       "extra": 0
     }
+  ],
+  "AK": [
+    {
+      "url": "banners/AK_660x440/banner.html",
+      "companyName": "astrologykingdom.com",
+      "width": "660",
+      "height": "440",
+      "extra": 0
+    }
   ]
 }

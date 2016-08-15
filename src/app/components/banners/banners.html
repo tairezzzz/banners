@@ -1,0 +1,55 @@
+
+<div layout="row"  layout-margin layout-padding layout-wrap>
+    <aside flex flex-xs="100" flex-sm="100" flex-md="25" flex-gt-md="25">
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="true" md-disable-backdrop md-whiteframe="4">
+            <md-toolbar layout="row" class="md-hue-3">
+                <div class="md-toolbar-tools">
+                    <span>Sizes</span>
+                </div>
+            </md-toolbar>
+            <ul style="margin:0; padding:0">
+                <li ng-repeat="items in $ctrl.banners">
+                    <md-subheader class="md-no-sticky" flex>{{items[0].companyName}}</md-subheader>
+                    <md-list>
+                        <md-list-item class="md-1-line" ng-repeat="item in items" ng-click="$ctrl.showBanner(item)">
+                            {{item.width}}x{{item.height}}
+                        </md-list-item>
+                    </md-list>
+                </li>
+            </ul>
+        </md-sidenav>
+        <div style="margin-top:20px" ng-show="$ctrl.showForm"><md-button ng-click="$ctrl.show()">Add banner</md-button></div>
+    </aside>
+
+    <md-content flex> {{$ctrl.msg}}
+        <md-card ng-show="$ctrl.showBan">
+            <md-card-header>
+                <md-card-header-text layout-align="center center">
+                    <span class="md-title">{{$ctrl.banner.width}}x{{$ctrl.banner.height}}</span>
+                    <span class="md-subhead">{{$ctrl.banner.companyName}}</span>
+                </md-card-header-text>
+            </md-card-header>
+            <iframe src="{{$ctrl.banner.url}}" target="_parent" width="{{$ctrl.banner.width}}" height="{{$ctrl.banner.height}}"></iframe>
+        </md-card>
+        <div class="add-form" ng-show="$ctrl.showForm" layout="column" layout-padding>
+            <div class="md-headline">{{$ctrl.message}}</div>
+            <form class="form" name="bannerForm">
+                <md-input-container class="md-block">
+                    <label>Company title</label>
+                    <input ng-model="newBanner.companyName">
+                </md-input-container>
+                <md-input-container>
+                    <label>Width</label>
+                    <input ng-model="newBanner.width">
+                </md-input-container>
+                <md-input-container>
+                    <label>Height</label>
+                    <input ng-model="newBanner.height">
+                </md-input-container>
+                <div>
+                    <md-button class="md-raised md-primary" ng-click="$ctrl.addBnr(newBanner)">Add</md-button>
+                </div>
+            </form>
+        </div>
+    </md-content>
+</div>

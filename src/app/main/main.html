@@ -1,14 +1,14 @@
 <div class="wrapper" layout-fill layout="row" layout-align="center center">
 
-  <md-content flex flex-lg="70" flex-xl="70">
+  <md-content flex flex-lg="90" flex-xl="70">
 
     <header layout="column" layout-padding layout-align="center center">
       <div class="md-display-4">Banners</div>
     </header>
 
-    <form class="content" layout="row" layout-xs="column" layout-padding layout-margin>
+    <div class="content" layout="row" layout-xs="column">
 
-      <aside flex>
+      <!--<aside flex>
         <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="true" md-disable-backdrop md-whiteframe="4">
           <md-toolbar layout="row" class="md-hue-3">
             <div class="md-toolbar-tools">
@@ -60,7 +60,9 @@
             </div>
           </form>
         </div>
-      </md-content>
+      </md-content>-->
+
+      <banners-component banners="main.banners" msg="main.msg" flex></banners-component>
 
     </div>
 

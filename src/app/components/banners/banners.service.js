@@ -3,12 +3,12 @@ export class BannersService {
     'ngInject';
 
     this.$http = $http;
-    this.banners = {};
     this.onInit();
-    this.message = '';
   }
 
   onInit(){
+    this.banners = {};
+    //this.message = '111';
 
     this.$http.get('banners.json')
       .then((response)=>{
@@ -34,12 +34,13 @@ export class BannersService {
     let company = data.companyName;
     if (typeof this.banners[company] == 'object')
       this.banners[company].push(data);
-    else
-      this.banners[company] = data;
+    else {
+      this.banners[company] = [data];
+    }
 
-    this.$http.post('banners.json', this.banners)
+    return this.$http.post('./banners.json', this.banners)
       .then((response) => {
-        this.message = 'Баннер успешно добавлен.'
+
       });
   }
 }
