@@ -1,8 +1,9 @@
 export class BannersController {
-    constructor (bannersService) {
+    constructor (bannersService, $sce) {
         'ngInject';
 
         this.bannersService = bannersService;
+        this.$sce = $sce;
         //this.onInit();
     }
 
@@ -17,7 +18,8 @@ export class BannersController {
     }
 
     showBanner(banner){
-        this.banner=banner;
+        this.banner = banner;
+        this.banner.url = this.$sce.trustAsResourceUrl(banner.url);
         this.showBan = true;
         this.showForm = false;
     }
