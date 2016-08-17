@@ -24,35 +24,51 @@
       "extra": 0
     }
   ],
-  "AK": [
+  "Free psychic question": [
     {
       "url": "https://astrologykingdom.com/banners/free-psychic-question/144x198/banner.html",
-      "companyName": "astrologykingdom.com",
+      "companyName": "free-psychic-question",
       "width": "144",
       "height": "198",
       "extra": 0
     },
     {
       "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250/banner.html",
-      "companyName": "astrologykingdom.com",
+      "companyName": "free-psychic-question",
       "width": "300",
       "height": "250",
       "extra": 0
     },
     {
       "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_2/banner.html",
-      "companyName": "astrologykingdom.com",
+      "companyName": "free-psychic-question",
       "width": "300",
       "height": "250",
       "extra": 0
     },
     {
       "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_3/banner.html",
-      "companyName": "astrologykingdom.com",
+      "companyName": "free-psychic-question",
       "width": "300",
       "height": "250",
       "extra": 0
     },
+    {
+      "url": "https://astrologykingdom.com/banners/free-psychic-question/660x440/banner.html",
+      "companyName": "free-psychic-question",
+      "width": "660",
+      "height": "440",
+      "extra": 0
+    },
+    {
+      "url": "https://astrologykingdom.com/banners/free-psychic-question/660x440_2/banner.html",
+      "companyName": "free-psychic-question",
+      "width": "660",
+      "height": "440",
+      "extra": 0
+    }
+  ],
+  "Astrologykingdom": [
     {
       "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_4/banner.html",
       "companyName": "astrologykingdom.com",
@@ -61,28 +77,28 @@
       "extra": 0
     },
     {
-      "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_5/banner.html",
-      "companyName": "astrologykingdom.com",
-      "width": "300",
-      "height": "250",
-      "extra": 0
+    "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_5/banner.html",
+    "companyName": "astrologykingdom.com",
+    "width": "300",
+    "height": "250",
+    "extra": 0
     },
     {
-      "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_6/banner.html",
-      "companyName": "astrologykingdom.com",
-      "width": "300",
-      "height": "250",
-      "extra": 0
+    "url": "https://astrologykingdom.com/banners/free-psychic-question/300x250_6/banner.html",
+    "companyName": "astrologykingdom.com",
+    "width": "300",
+    "height": "250",
+    "extra": 0
     },
     {
-      "url": "https://astrologykingdom.com/banners/free-psychic-question/660x440/banner.html",
+      "url": "https://astrologykingdom.com/banners/free-psychic-question/660x440_3/banner.html",
       "companyName": "astrologykingdom.com",
       "width": "660",
       "height": "440",
       "extra": 0
     },
     {
-      "url": "https://astrologykingdom.com/banners/free-psychic-question/660x440_2/banner.html",
+      "url": "https://astrologykingdom.com/banners/free-psychic-question/660x440_4/banner.html",
       "companyName": "astrologykingdom.com",
       "width": "660",
       "height": "440",
